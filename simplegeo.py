@@ -67,14 +67,14 @@ def convert_ip_to_country(filename, savedir):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Simple geo file for generator for nginx')
-    parser.add_argument('--dataurl', type=str, default=APNICSRC,
-                        help='APNIC data')
     parser.add_argument('-n', '--no_download', action='store_true',
                         help='Do not download data before generating conf files')
     parser.add_argument('-v', '--verbose', action='store_true',
                         help='Show downloading status')
     parser.add_argument('--savedir', type=str, default=CONFDIR,
                         help='The path to store conf files')
+    parser.add_argument('--dataurl', type=str, default=APNICSRC,
+                        help='URL of APNIC data')
     
     args = parser.parse_args()
     dataurl = args.dataurl
