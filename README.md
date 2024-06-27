@@ -29,7 +29,7 @@ chmod a+x symplegeo.py
 `-h`オプションをつけて実行すると、次のようにヘルプが表示されます。
 
 ```
-Simple geo file for generator for nginx
+Simple geo file generator for nginx
 
 options:
   -h, --help         show this help message and exit

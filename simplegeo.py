@@ -66,7 +66,7 @@ def convert_ip_to_country(filename, savedir):
     return geolist
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Simple geo file for generator for nginx')
+    parser = argparse.ArgumentParser(description='Simple geo file generator for nginx')
     parser.add_argument('-n', '--no_download', action='store_true',
                         help='Do not download data before generating conf files')
     parser.add_argument('-v', '--verbose', action='store_true',
